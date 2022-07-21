@@ -1,7 +1,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" type="text/css" href="/css/style.css">-->
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/uikit.min.css">
+    <!-- UIkit JS  -->
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
+    <!-- Theme Overriddes: CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
